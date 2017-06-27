@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <TextView
+            android:text="PS:"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/et_ps"
+            android:layout_margin="5dp"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="---"/>
+
+        <Button
+            android:id="@+id/bo_del01"
+            android:text="Del"
+            android:layout_width="52dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:minHeight="49dp"
+            android:layout_rowSpan="2"/>
+
+        <TextView
+            android:text="KW:"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/et_kw"
+            android:layout_margin="5dp"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="---"/>
+
+        <TextView
+            android:text="Datum:"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/et_datum"
+            android:layout_margin="5dp"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="---" />
+
+        <Button
+            android:id="@+id/bo_del02"
+            android:text="Del"
+            android:layout_width="52dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:minHeight="49dp"
+            android:layout_rowSpan="2" />
+
+        <TextView
+            android:text="Woche:"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/et_woche"
+            android:layout_margin="5dp"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="---" />
+
+        </GridLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/bo_speichern"
+            android:text="Ergebnis Speichern"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:minHeight="49dp"/>
+
+        <Button
+            android:id="@+id/bo_loeschen"
+            android:text="Speicher löschen"
+            android:layout_width="181dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:minHeight="49dp" />
+     </GridLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/ps_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:text="PS"
+            />
+
+        <TextView
+            android:id="@+id/kw_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:text="KW" />
+
+        <TextView
+            android:id="@+id/datum_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:text="Datum"/>
+
+        <TextView
+            android:id="@+id/woche_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:text="Woche"/>
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_number_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+
+
